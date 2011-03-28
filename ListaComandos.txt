@@ -1,0 +1,17 @@
+GIT Commands
+
+init : Crea un repositorio en un directorio local.
+clone [url] : Clona el repositorio de la url especificada en un directorio local.
+add [archivos...] : Agrega los archivos especificados a la "staging area" (no se me ocurre una forma de traducirlo sin perder el concepto, sirve como caché para los archivos previo a hacer el commit)
+status : Muestra el estado de los archivos en el directorio y la staging area.
+diff : Muestra las diferencias entre lo que se encuentra en la staging area, y los archivos modificados que aún no lo están.
+commit : Guarda los cambios en el repositorio.
+log : Muestra el historial de commits.
+branch [branchname] : Cuando se pasa "branchname" crea una nueva rama del repositorio con ese nombre, si no muestra las ramas disponibles. Agregando -d borra la rama "branchname".
+merge [branchname] : Une la rama en la que se está trabajando con la rama "branchname".
+checkout [branchname] : Cambia a la rama "branchname". Si en su lugar usamos git checkout -- [filename] hace un rollback del archivo al último commit.
+remote : Administración del repositorio remoto. Opciones: http://www.kernel.org/pub/software/scm/git/docs/git-remote.html
+fetch: Descarga actualizaciones del directorio remoto.
+pull : Idem fetch, solo que luego intenta hacer un merge entre lo que se descargó y el repositorio local.
+push : El opuesto de fetch, sube tus cambios en el repositorio local al remoto.
+reset : quita los cambios hechos en la staging area. git reset --hard HEAD (siendo HEAD un puntero al último commit)
