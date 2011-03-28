@@ -1,4 +1,4 @@
-GIT Commands
+﻿GIT Commands
 
 init : Crea un repositorio en un directorio local.
 clone [url] : Clona el repositorio de la url especificada en un directorio local.
